@@ -1,0 +1,19 @@
+{
+  "name": "angular-seed",
+  "description": "Angular Seed Application",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ugbandula/angular-seed",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "latest",
+    "angular-loader": "latest",
+    "angular-mocks": "latest",
+    "html5-boilerplate": "latest",
+	"angular-bootstrap": "latest",
+	"angular-sanitize": "latest",
+	"angular-touch": "latest",
+	"angular-ui-router": "latest",
+	"angular-spinner": "latest"
+  }
+}

@@ -1,0 +1,264 @@
+/* Default Styles
+--------------------------------------------------------------------*/
+/*
+  Original Bootstrap's CSS depends on empty href attributes to style cursors for several components
+  (pagination, tabs etc.). But in AngularJS adding empty href attributes to link tags will cause
+  unwanted route changes. This is why we need to remove empty href attributes from directive templates
+  and as a result styling is not applied correctly.
+*/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body {
+    /*background: url('../images/denim.png');*/
+    font-family: 'Droid Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.wrap {
+    width: 98%;
+    /*width: 940px;*/
+    margin: 12px auto;
+    /*margin: 4em auto;*/
+    z-index: 1;
+}
+
+div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav {
+    /*background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));*/
+    /*background-image: linear-gradient(#fff, #ccc);*/
+    /*border-radius: 6px;*/
+    /*box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);*/
+    /*padding: 0 10px;*/
+    /*position: relative;*/
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+.sub-menu {
+    background: -webkit-gradient(linear, center top, center bottom, from(#fff), to(#ccc));
+    background-image: linear-gradient(#fff, #ccc);
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
+    padding: 0 10px;
+    position: relative;
+}
+
+/*nav ul {*/
+/*display:inline-block;*/
+/*list-style:none;*/
+/*}*/
+.custom-li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu li a {
+    color: #444;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
+    margin: 8px 8px;
+    vertical-align: middle;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu li a:hover {
+    background: -webkit-gradient(linear, center top, center bottom, from(#ededed), to(#fff));
+    background-image: linear-gradient(#ededed, #fff);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+/* Dropdown styles */
+
+.menu ul {
+    position: absolute;
+    left: -9999px;
+    list-style: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 1;
+    text-decoration: none;
+    /*list-style: none;*/
+}
+
+.menu ul li {
+    float: none;
+    text-decoration: none;
+    /*list-style: none;*/
+}
+
+.menu ul a {
+    white-space: nowrap;
+    text-decoration: none;
+    /*list-style: none;*/
+}
+
+/* Displays the dropdown on hover and moves back into position */
+.menu li:hover ul {
+    background: rgba(255,255,255,0.7);
+    border-radius: 0 0 6px 6px;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.4);
+    left: 5px;
+    opacity: 1;
+}
+
+/* Persistant Hover State */
+.menu li:hover a {
+    background: -webkit-gradient(linear, center top, center bottom, from(#ccc), to(#ededed));
+    background-image: linear-gradient(#ccc, #ededed);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+.menu li:hover ul a {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.menu li:hover ul li a:hover {
+    background: -webkit-gradient(linear, center top, center bottom, from(#eee), to(#fff));
+    background-image: linear-gradient(#ededed, #fff);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 4px 2px rgba(0,0,0,0.3);
+}
+
+/*Overriding Styles*/
+h1, h2, h3, h4, h5 {
+    /*color: #000000;*/
+    color: #786F6F;
+    text-align: left;
+}
+
+td, th {
+    padding: 10px;
+}
+
+.left-navigation-panel {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 904;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-panel {
+    width: 100%;
+    /*position: absolute;*/
+    z-index: 904;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.base-panel {
+    margin-right: 10px;
+}
+
+.custom-table {
+    width: 100%;
+}
+
+/**
+ * Text Slider Directive - CSS
+ **/
+.text-size-slider {
+    line-height: 100%;
+    font-size: 12px;
+    display: flex;
+}
+
+.text-size-slider .small-letter,.text-size-slider .big-letter
+{
+    font-weight: bold;
+}
+
+.text-size-slider .slider {
+    -webkit-appearance: none;
+    margin: 0 8px;
+}
+
+.text-size-slider .slider:focus {
+    outline: none;
+}
+
+.text-size-slider .slider::-webkit-slider-thumb {
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: darkslateblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.text-size-slider .slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background-color: darkgray;
+    /*background: white;*/
+    border: 0;
+}
+
+.user-input-error {
+    text-align: center;
+    color: red;
+    /*background-color: #9cb4c5;*/
+    padding: 10px;
+    /*border-radius: 4px;*/
+    font-size: 16px;
+}
+
+.input-error {
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: red;
+}
+
+.input-normal {
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: black;
+}
+
