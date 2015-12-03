@@ -1,5 +1,5 @@
 {
-	"proxy":"http://proxy.com:3128",
-	"https-proxy":"http://proxy.com:3128",
+	"proxy":"http://proxy.yvw.com.au:3128",
+	"https-proxy":"http://proxy.yvw.com.au:3128",
 	"directory": "bower_components"
 }

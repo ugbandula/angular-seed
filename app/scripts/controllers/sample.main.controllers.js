@@ -11,7 +11,7 @@
  */
 
 angular
-    .module('sample.main.directives', [])
+    .module('sample.main.controllers', [])
     .controller('MainController', MainController);
 
 MainController.$inject = ['$scope', 'dataService'];
