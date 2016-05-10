@@ -7,7 +7,7 @@ angular
     .module('sample.features.config', [])
 
     .constant('SERVICE_URLS', {
-        dataServiceURL  : 'http://localhost:8080/sample-service/'   // Data Service URL
+        dataServiceURL  : '/sample-service/'   // Data Service URL
     })
 
     .constant('PROCESS_STATUS', {
