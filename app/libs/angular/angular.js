@@ -26562,7 +26562,7 @@ var ngOptionsDirective = ['$compile', '$parse', function($compile, $parse) {
         // selects in certain circumstances when multiple selects are next to each other and display
         // the option list in listbox style, i.e. the select is [multiple], or specifies a [size].
         // See https://github.com/angular/angular.js/issues/11314 for more info.
-        // This is unfortunately untestable with unit / e2e tests
+        // This is unfortunately untestable with unit / e2e-tests tests
         if (option.label !== element.label) {
           element.label = option.label;
           element.textContent = option.label;
