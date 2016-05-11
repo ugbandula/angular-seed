@@ -43,7 +43,7 @@ describe('MainController', function () {
           $scope.readData();
           expect(dataServiceMock.getServiceData).toHaveBeenCalled();
           $timeout.flush();
-          expect($scope.data).toEqual(getJSON('sample.json'));
+          expect($scope.data).toEqual(getJSONFixture('sample.json'));
         });
     });
 

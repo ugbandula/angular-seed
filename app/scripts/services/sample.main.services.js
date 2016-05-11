@@ -32,6 +32,7 @@ function dataService($http, SERVICE_URLS) {
 
         function getServiceDataFailed(error) {
             console.log('XHR failed for getServiceData ' + error.data);
+            return error.data;
         }
     }
 
