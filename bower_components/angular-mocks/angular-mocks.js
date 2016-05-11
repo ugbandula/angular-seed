@@ -1144,7 +1144,7 @@ angular.mock.$HttpBackendProvider = function() {
  *   - passing through is disabled
  *   - auto flushing is disabled
  *
- * Returns instance for e2e testing (when `$delegate` and `$browser` specified):
+ * Returns instance for e2e-tests testing (when `$delegate` and `$browser` specified):
  *   - passing through (delegating request to real backend) is enabled
  *   - auto flushing is enabled
  *

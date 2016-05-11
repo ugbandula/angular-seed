@@ -17,15 +17,14 @@ angular
 MainController.$inject = ['$scope', 'dataService'];
 
 function MainController($scope, dataService) {
-    $scope.data = [];
 
     init();
 
     function init() {
-        console.log('<MainController> Initialized');
+      $scope.data = [];
     }
 
-    function readData() {
+    $scope.readData = function readData() {
         dataService.getServiceData()
             .then(function(data) {
                 $scope.data = data;
