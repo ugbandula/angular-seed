@@ -1,10 +1,10 @@
 {
   "name": "angular-seed",
   "description": "Angular Seed Application",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "homepage": "https://github.com/ugbandula/angular-seed",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "angular": "latest",
     "bootstrap": "latest",
