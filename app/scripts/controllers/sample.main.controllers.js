@@ -18,10 +18,11 @@ MainController.$inject = ['$scope', 'dataService'];
 
 function MainController($scope, dataService) {
 
-    (function() {
-      'use strict';
+    init();
+
+    function init() {
       $scope.data = [];
-    }());
+    }
 
     $scope.readData = function readData() {
         dataService.getServiceData()

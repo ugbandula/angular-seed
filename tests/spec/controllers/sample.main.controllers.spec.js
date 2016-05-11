@@ -1,3 +1,5 @@
+
+
 describe('MainController', function () {
 
     var $controller, $scope, $timeout, $q, dataServiceMock, deferred, spyPromise;
@@ -21,7 +23,7 @@ describe('MainController', function () {
 
         // Spy the service and fake the async return value to local data
         dataServiceMock = jasmine.createSpyObj('dataService',['getServiceData']);
-        dataServiceMock.getServiceData.and.returnValue($q.when('test data'));
+        dataServiceMock.getServiceData.and.returnValue(getPromise($q, 'sample.json'));
 
         // Then we can use inject to access $controller, the service that is responsible for instantiating controllers.
         $controller('MainController', { $scope: $scope, dataService: dataServiceMock});
@@ -41,7 +43,7 @@ describe('MainController', function () {
           $scope.readData();
           expect(dataServiceMock.getServiceData).toHaveBeenCalled();
           $timeout.flush();
-          expect($scope.data).toEqual('test data');
+          expect($scope.data).toEqual(getJSON('sample.json'));
         });
     });
 

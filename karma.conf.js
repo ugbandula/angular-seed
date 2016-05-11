@@ -15,6 +15,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'bower_components/jquery/dist/jquery.js',
+      'node_modules/jasmine-jquery/lib/jasmine-jquery.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-mocks/angular-mocks.js',
@@ -25,7 +26,10 @@ module.exports = function(config) {
       'app/scripts/**/*.directives.js',
       'app/features/**/*.mod.js',
       'app/**/*.js',
-      'tests/**/*.js'
+      'tests/**/*.js',
+
+      // fixtures
+      {pattern: 'tests/mocks/*.json', watched: true, served: true, included: false}
     ],
 
 
