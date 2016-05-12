@@ -10,7 +10,6 @@
 
 var smartApp = angular.module('sample', [
     'ui.router',                        // Angular ui-router
-    //'ngRoute',
     'ui.bootstrap',                     // Angular-UI Bootstrap library
     'sample.main.directives',           // Directives
     'sample.main.filters',              // Filter definitions

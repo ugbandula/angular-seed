@@ -33,8 +33,13 @@
         <div ng-include="'includes/left-panel.html'"  class="col-xs-12 col-sm-4 col-md-3 col-lg-3"> </div>
         <span us-spinner="{radius:15, width:8, length: 16}"></span>
 
+        <button class="btn btn-primary" ng-click="readData()">Read async data</button>
+        <div>{{data.success}}</div>
+
         <!-- MAIN CONTENT -->
-        <div id="content" ui-view class="view-animate col-xs-12 col-sm-8 col-md-9 col-lg-9"></div>
+        <div id="content" ui-view class="view-animate col-xs-12 col-sm-8 col-md-9 col-lg-9">
+
+        </div>
         <!-- END MAIN CONTENT -->
     </div>
     <!-- END MAIN PANEL -->
