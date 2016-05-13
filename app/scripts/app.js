@@ -17,8 +17,7 @@ var smartApp = angular.module('sample', [
     'sample.main.controllers',          // Controllers
     'sample.features.config',
     'sample.features.feature1',
-    'angularSpinner',
-    'ngLoadingSpinner'
+    'angularSpinner'
 ]);
 
 // Listens to Route Change events and validates those actions and take

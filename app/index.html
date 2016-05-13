@@ -36,6 +36,13 @@
         <button class="btn btn-primary" ng-click="readData()">Read async data</button>
         <div>{{data.success}}</div>
 
+        <h2>Directive</h2>
+        <button class="btn btn-danger" id="test" confirm-action ng-really-message="Are you sure?" onclick="console.log('done')">confirm action</button>
+
+        <div>Text slider</div>
+        
+        <text-size-slider min="12" max="24" unit="px" value="18" step="0">
+
         <!-- MAIN CONTENT -->
         <div id="content" ui-view class="view-animate col-xs-12 col-sm-8 col-md-9 col-lg-9">
 
